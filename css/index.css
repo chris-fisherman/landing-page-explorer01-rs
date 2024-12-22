@@ -1,0 +1,21 @@
+/******************* 
+*** BASIC NORMALIZE 
+*******************/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+}
+
+/******************* 
+*** ROOT
+*******************/
+:root {
+    /* colors */
+    --main-color: #ffa434;
+    --content-color: #7d7987;
+    --secondary-color: #393f82;
+
+    /* font */
+    --content-font-size: 14px;
+}
