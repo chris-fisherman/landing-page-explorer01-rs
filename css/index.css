@@ -26,7 +26,8 @@
 /******************* 
 *** HTML & BODY
 *******************/
-html, #body {
+html, 
+#body {
     max-width: 100%;
 }
 #body {
@@ -39,19 +40,27 @@ html, #body {
 /******************* 
 *** MAIN
 *******************/
-#main, #main-heroImg {
+#main, 
+#main-heroImg {
     width: 100%;
 }
-#main, #main-section {
+#main, 
+#main-section {
     display: flex;
     flex-direction: column;
 }
 #main {
     gap: 60px;
 }
+#main-heroImg {
+    max-width: 348px;
+    margin: 0 auto;
+}
 #main-section {
     gap: 35px;
+    max-width: 580px;
     text-align: center;
+    margin: 0 auto;
 }
 #main-section_title {
     font-size: 28px;
@@ -84,4 +93,16 @@ html, #body {
 }
 .footer-links:hover {
     color: #000
+}
+
+/******************* 
+*** DESKTOP VIEW
+*******************/
+@media (min-width: 750px) {
+    #main-section_title {
+        font-size: 49px;
+    }
+    #body {
+        gap: 80px;
+    }
 }
