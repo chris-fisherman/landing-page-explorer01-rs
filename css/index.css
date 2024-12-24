@@ -18,4 +18,70 @@
 
     /* font */
     --content-font-size: 14px;
+    --content-font-weight: 400;
+    --link-font-weight: 500;
+}
+
+
+/******************* 
+*** HTML & BODY
+*******************/
+html, #body {
+    max-width: 100%;
+}
+#body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/******************* 
+*** MAIN
+*******************/
+#main, #main-heroImg {
+    width: 100%;
+}
+#main, #main-section {
+    display: flex;
+    flex-direction: column;
+}
+#main {
+    gap: 60px;
+}
+#main-section {
+    gap: 35px;
+    text-align: center;
+}
+#main-section_title {
+    font-size: 28px;
+    font-weight: var(--content-font-weight);
+}
+.main-section_yellowBold {
+    color: var(--main-color);
+}
+.main-section_paragraph {
+    font-size: var(--content-font-size);
+    color: var(--content-color);
+    font-weight: var(--content-font-weight);
+}
+
+/******************* 
+*** FOOTER
+*******************/
+#footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+.footer-links {
+    font-size: var(--content-font-size);
+    color: var(--secondary-color);
+    text-decoration-line: none;
+    font-weight: var(--link-font-weight);
+}
+.footer-links:hover {
+    color: #000
 }
